@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center mt-4 mb-3">Entrar a paradigma</h2>
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <form action="{{ url_for('login') }}" method="post">
+            <div class="form-label">Usuario:</div>
+            <input type="text" name="user_form" id="" class="form-control" placeholder="Escribe tu usuario">
+            <div class="form-label">Contraseña:</div>
+            <input type="password" name="passwd_form" id="" class="form-control" placeholder="Escribe tu contraseña">
+            <button type="submit" class="btn form-control btn-warning mt-4 btn-lg">Entrar a paradigma</button>
+        </form>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+{% endblock %}

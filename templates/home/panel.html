@@ -1,0 +1,15 @@
+{% extends 'base_panel.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center mt-4 mb-3">Resumen con Paradigma</h1>
+    <form action="{{ url_for('resumen_paradise') }}" method="post">
+        <textarea required name="texto_completo" id="" cols="30" rows="13" class="form-control mt-2"></textarea>
+        <div class="form-label mt-2">Elige un número de sentencias</div>
+        <input type="text" name="numero" id="" class="form-control" required>
+        <button type="submit" class="btn btn-warning form-control mt-2 mb-5">Resumir texto</button>
+    </form>
+</div>
+
+{% endblock %}
